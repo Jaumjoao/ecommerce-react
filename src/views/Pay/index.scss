@@ -1,0 +1,104 @@
+@use '../../sass/variables' as *;
+
+.pay-detail{
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 30px;
+
+    &__left-side{
+        display: flex;
+        justify-content: center;
+
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: $contrast-color;
+            border: none;
+            
+            a{
+                text-decoration: none;
+                color: $white;
+                font-weight: 700;
+                font-size: 15px;
+            }
+
+            
+        }
+        
+        button:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        min-width: 400px;
+    }
+
+    &__input-wrepper{
+        display: flex;
+        flex-direction: column;
+
+        label{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            border: solid 1px $border-input-color;
+            margin-bottom: 35px;
+        }
+    }
+
+    &__format{
+        h2{
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        label{
+            margin-left: 15px;
+        }
+    }
+
+    &__pix, &__boleto{
+        margin-bottom: 10px;
+    }
+    &__credt-card{
+        margin-bottom: 50px;
+    }
+
+
+    &__right-side{
+        max-width: 500px;
+        max-height: 250px;
+        box-shadow: 0px 2px 5px 0px #7a7a7a;
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-weight: 600;
+            font-size: 25px;
+            margin: 20px 0 10px 40px;
+        }
+    }
+
+    &__product-price, &__product-total{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 40px;
+    }
+
+    &__product-price{
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border-background-card;
+    }
+
+    &__description{
+        font-size: 18px;
+    }
+}
