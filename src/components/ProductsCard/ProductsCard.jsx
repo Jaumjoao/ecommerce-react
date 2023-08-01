@@ -8,9 +8,9 @@ const ProductsCard = ({data}) => {
       <img src={data.imgPath} alt="model" />
       <div className="home__card-description">
         <p>{data.title}</p>
-        <button>
-          <Link to={`/products/${data.id}`}>Comprar Look</Link>
-        </button>
+        <Link to={`/products/${data.id}`}>
+          <button>Comprar Look</button>
+          </Link>
       </div>
     </div>
   );

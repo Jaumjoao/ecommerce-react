@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Login from './views/Login/Login.jsx';
-import Home from './views/home/home';
+import Home from './views/Home/Home';
 import Products from './views/Products/Products';
 import Pay from './views/Pay/Pay';
 import { PRODUCTS_MOCK } from "./mock/products.mock";

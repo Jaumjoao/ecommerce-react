@@ -64,9 +64,7 @@ const ProductDetail = ({data}) => {
                     </span>
                 ))}
             </div>
-            <button>
-                <Link to={`/pay/${data.id}`}>Finalizar compra</Link>
-            </button>
+            <button><Link to={`/pay/${data.id}`}>Finalizar compra</Link></button>
         </div>
     </div>
   );
